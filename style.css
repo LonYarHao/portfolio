@@ -1,0 +1,417 @@
+ :root {
+     --accent: #0d6efd;
+     --muted: #6c757d;
+     --card-bg: #ffffff;
+     --glass: rgba(255, 255, 255, 0.72);
+     --soft-shadow: 0 6px 18px rgba(20, 20, 40, 0.06);
+     font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto,
+         "Helvetica Neue", Arial;
+ }
+
+ html,
+ body {
+     height: 100%;
+ }
+
+ body {
+     background: linear-gradient(180deg, #f7f9fc 0%, #ffffff 40%);
+     color: #1f2937;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+     scroll-behavior: smooth;
+ }
+
+ /* Hero gradient animated */
+ .hero-bg {
+     position: relative;
+     overflow: hidden;
+     background: linear-gradient(135deg,
+             rgba(13, 110, 253, 0.06),
+             rgba(0, 199, 255, 0.03));
+ }
+
+ .animated-shape {
+     position: absolute;
+     width: 500px;
+     height: 500px;
+     border-radius: 50%;
+     filter: blur(60px);
+     opacity: 0.18;
+     animation: floaty 10s ease-in-out infinite;
+     z-index: 0;
+ }
+
+ .animated-shape.shape-1 {
+     background: linear-gradient(135deg, #7c3aed, #06b6d4);
+     left: -120px;
+     top: -60px;
+ }
+
+ .animated-shape.shape-2 {
+     background: linear-gradient(135deg, #0ea5e9, #3b82f6);
+     right: -140px;
+     bottom: -120px;
+     animation-duration: 14s;
+ }
+
+ @keyframes floaty {
+     0% {
+         transform: translateY(0) rotate(0deg);
+     }
+
+     50% {
+         transform: translateY(18px) rotate(12deg);
+     }
+
+     100% {
+         transform: translateY(0) rotate(0deg);
+     }
+ }
+
+ /* Navbar */
+ .navbar-brand {
+     font-weight: 700;
+     letter-spacing: 0.2px;
+ }
+
+ .nav-link {
+     color: var(--muted) !important;
+ }
+
+ .nav-link.active,
+ .nav-link:hover {
+     color: var(--accent) !important;
+     font-weight: 600;
+ }
+
+ /* Hero content */
+ #hero .container {
+     position: relative;
+     z-index: 2;
+ }
+
+ .typed {
+     color: var(--accent);
+     font-weight: 600;
+ }
+
+ /* Card hover */
+ .card {
+     transition: transform 0.35s ease, box-shadow 0.35s ease;
+     border: 0;
+     border-radius: 12px;
+     box-shadow: var(--soft-shadow);
+     background: var(--card-bg);
+ }
+
+ .card:hover {
+     transform: translateY(-6px);
+     box-shadow: 0 12px 36px rgba(20, 20, 40, 0.08);
+ }
+
+ /* Flip card */
+ .flip-card {
+     perspective: 1200px;
+ }
+
+ .flip-card-inner {
+     position: relative;
+     width: 100%;
+     transform-style: preserve-3d;
+     transition: transform 0.7s;
+ }
+
+ .flip-card-inner {
+     height: 100%;
+     /* make inner fill parent */
+     min-height: 300px;
+     /* force a visible height */
+ }
+
+ .flip-card-front,
+ .flip-card-back {
+     position: absolute;
+     inset: 0;
+     /* fill parent */
+     border-radius: 12px;
+     overflow: hidden;
+ }
+
+ .flip-card:hover .flip-card-inner {
+     transform: rotateY(180deg);
+ }
+
+ .flip-card-front,
+ .flip-card-back {
+     backface-visibility: hidden;
+     -webkit-backface-visibility: hidden;
+     position: absolute;
+     inset: 0;
+     border-radius: 12px;
+     overflow: hidden;
+ }
+
+ .flip-card-front img {
+     width: 100%;
+     height: 220px;
+     object-fit: cover;
+     display: block;
+ }
+
+ .flip-card-body {
+     padding: 1rem;
+ }
+
+ .flip-card-back {
+     transform: rotateY(180deg);
+     background: linear-gradient(180deg, #fff, #f8fafc);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 1rem;
+ }
+
+ .badge-tech {
+     font-size: 12px;
+     padding: 0.35rem 0.5rem;
+     border-radius: 999px;
+     margin-right: 0.35rem;
+     background: rgba(13, 110, 253, 0.08);
+     color: var(--accent);
+     border: 1px solid rgba(13, 110, 253, 0.08);
+ }
+
+ /* Skills */
+ .skill-row {
+     display: flex;
+     align-items: center;
+     gap: 1rem;
+     margin-bottom: 0.9rem;
+ }
+
+ .skill-label {
+     min-width: 120px;
+     font-weight: 600;
+     font-size: 0.95rem;
+     color: #24303b;
+ }
+
+ /* Timeline */
+ .timeline {
+     position: relative;
+     padding-left: 1.25rem;
+ }
+
+ .timeline::before {
+     content: "";
+     position: absolute;
+     left: 16px;
+     top: 0;
+     bottom: 0;
+     width: 3px;
+     background: linear-gradient(#e9eefb, #fbf0ff);
+     border-radius: 2px;
+ }
+
+ .timeline-item {
+     position: relative;
+     margin-bottom: 1.75rem;
+     padding-left: 1.5rem;
+ }
+
+ .timeline-item::before {
+     content: "";
+     position: absolute;
+     left: -3px;
+     top: 4px;
+     width: 14px;
+     height: 14px;
+     border-radius: 50%;
+     background: var(--card-bg);
+     border: 4px solid var(--accent);
+     box-shadow: 0 6px 14px rgba(11, 81, 247, 0.06);
+ }
+
+ /* contact */
+ .social-icon {
+     font-size: 18px;
+     width: 42px;
+     height: 42px;
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 8px;
+     border: 1px solid rgba(0, 0, 0, 0.06);
+     margin-right: 0.5rem;
+ }
+
+ /* back to top */
+ #toTopBtn {
+     position: fixed;
+     right: 20px;
+     bottom: 24px;
+     z-index: 999;
+     background: var(--accent);
+     color: white;
+     border: 0;
+     padding: 10px 12px;
+     border-radius: 10px;
+     display: none;
+     box-shadow: 0 8px 20px rgba(13, 110, 253, 0.18);
+ }
+
+ /* responsive tweaks */
+ @media (max-width: 576px) {
+     .skill-label {
+         min-width: 90px;
+         font-size: 0.88rem;
+     }
+
+     .flip-card-front img,
+     .flip-card-front {
+         height: 180px;
+     }
+ }
+
+ /* Dark Mode */
+ body.dark-mode {
+     background: #111827;
+     color: #f3f4f6;
+ }
+
+ body.dark-mode .card {
+     background: #1f2937;
+     color: #f3f4f6;
+ }
+
+ body.dark-mode .navbar {
+     background: #1f2937 !important;
+ }
+
+ body.dark-mode .nav-link {
+     color: #d1d5db !important;
+ }
+
+ body.dark-mode .nav-link.active,
+ body.dark-mode .nav-link:hover {
+     color: #60a5fa !important;
+ }
+
+ body.dark-mode footer {
+     background: #0f172a !important;
+ }
+
+ /* Fix text colors in dark mode */
+ body.dark-mode h1,
+ body.dark-mode h2,
+ body.dark-mode h3,
+ body.dark-mode h4,
+ body.dark-mode h5,
+ body.dark-mode h6,
+ body.dark-mode p,
+ body.dark-mode li,
+ body.dark-mode small,
+ body.dark-mode strong {
+     color: #f3f4f6 !important;
+ }
+
+ /* Hero name fix */
+ body.dark-mode #hero h1 span {
+     color: #93c5fd !important;
+     /* lighter blue for contrast */
+ }
+
+ /* Muted text */
+body.dark-mode .text-muted {
+    color: #d1d5db !important;
+    /* lighter gray for better contrast */
+}
+ /* === Dark mode fixes for Skills & Education === */
+
+ /* Skills section */
+ body.dark-mode .skill-label {
+     color: #f3f4f6 !important;
+     /* light gray/white */
+ }
+
+ body.dark-mode .skill-row small {
+     color: #d1d5db !important;
+     /* softer gray for descriptions */
+ }
+
+ /* Progress bars */
+ body.dark-mode .progress {
+     background-color: #374151 !important;
+     /* dark track */
+ }
+
+ body.dark-mode .progress-bar {
+     background-color: #3b82f6 !important;
+     /* blue bar */
+ }
+
+ /* Education timeline */
+ body.dark-mode .timeline::before {
+     background: linear-gradient(#4b5563, #1f2937) !important;
+ }
+
+ body.dark-mode .timeline-item::before {
+     background: #111827 !important;
+     border-color: #3b82f6 !important;
+ }
+
+ body.dark-mode .timeline-item h6 {
+     color: #f9fafb !important;
+     /* white heading */
+ }
+
+ body.dark-mode .timeline-item small,
+ body.dark-mode .timeline-item p {
+     color: #d1d5db !important;
+     /* soft gray text */
+ }
+
+ /* Education & Certifications Dark Mode Fix */
+ body.dark-mode #education {
+     background: #0f172a !important;
+     /* deep slate navy */
+ }
+
+ body.dark-mode #education h3,
+ body.dark-mode #education h6,
+ body.dark-mode #education small,
+ body.dark-mode #education p,
+ body.dark-mode #education .text-muted {
+     color: #f8fafc !important;
+     /* force light text */
+ }
+
+ body.dark-mode .timeline::before {
+     background: linear-gradient(#1e293b, #334155) !important;
+ }
+
+ body.dark-mode .timeline-item::before {
+     background: #0f172a !important;
+     border-color: var(--accent) !important;
+ }
+
+ /* Force project titles & text visible in dark mode */
+ body.dark-mode #projects h5,
+ body.dark-mode #projects p,
+ body.dark-mode #projects small {
+     color: #f9fafb !important;
+     /* Bright white */
+ }
+
+ body.dark-mode #projects .flip-card-back {
+     background: #1e293b !important;
+     /* Dark slate background */
+     color: #f9fafb !important;
+ }
+
+ body.dark-mode #projects .flip-card-front {
+     background: #1e293b !important;
+     color: #f9fafb !important;
+ }
+
+ 

@@ -1,0 +1,850 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Lon Yar Hao — Junior Full-Stack Developer</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- AOS (Animate on Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Typed.js (for typed hero) -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">Lon Yar Hao</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMain"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMain">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="#hero">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <button id="themeToggle" class="btn btn-sm ms-3">
+            <i id="themeIcon" class="fas fa-moon"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero" class="hero-bg py-5 position-relative">
+      <div class="animated-shape shape-1" aria-hidden="true"></div>
+      <div class="animated-shape shape-2" aria-hidden="true"></div>
+
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-lg-7" data-aos="fade-up">
+            <h1 class="display-5 fw-bold mb-3">
+              Hi, I'm <span style="color: #0f172a">Lon Yar Hao</span>
+            </h1>
+            <p class="lead mb-2">Junior Full-Stack Developer</p>
+            <p class="mb-3">
+              Building responsive and maintainable web applications using
+              <strong>Laravel</strong>, <strong>PHP</strong>,
+              <strong>MySQL</strong>, and <strong>Vue.js</strong>.
+            </p>
+
+            <div class="mb-3">
+              <span class="mb-3">I work with</span>
+              <span id="typed" class="typed ms-2"></span>
+            </div>
+
+            <div class="d-flex gap-2">
+              <a href="#projects" class="btn btn-primary btn-lg"
+                >See Projects</a
+              >
+              <a
+                href="./image/LonYarHao_CV.pdf"
+                download
+                class="btn btn-outline-secondary btn-lg"
+                >Download CV</a
+              >
+              <a
+                href="mailto:haoneo.lyh.011@gmail.com"
+                class="btn btn-white btn-lg border"
+                >Contact</a
+              >
+            </div>
+
+            <div class="mt-4 d-flex gap-2">
+              <a
+                class="social-icon"
+                href="https://www.linkedin.com/in/lon-yar-hao-862549349"
+                target="_blank"
+                title="LinkedIn"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a
+                class="social-icon"
+                href="https://github.com/LonYarHao"
+                target="_blank"
+                title="GitHub"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                class="social-icon"
+                href="mailto:haoneo.lyh.011@gmail.com"
+                title="Email"
+                ><i class="fas fa-envelope"></i
+              ></a>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-5 text-center"
+            data-aos="fade-left"
+            data-aos-delay="120"
+          >
+            <div
+              class="card p-3"
+              style="background: var(--glass); border-radius: 18px"
+            >
+              <img
+                src="./image/profile.jpg"
+                alt="Lon Yar Hao"
+                class="rounded-circle mx-auto d-block shadow-sm"
+                style="width: 150px; height: 150px; object-fit: cover"
+              />
+              <div class="card-body text-center">
+                <h5 class="mb-0">Lon Yar Hao</h5>
+                <small class="text-muted">Junior Full-Stack Developer</small>
+                <p class="mt-2 small text-muted mb-0">
+                  Based in Ho Chi Minh City • English & Burmese
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-5">
+      <div class="container-lg">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6" data-aos="fade-right">
+            <h2 class="mb-3">About Me</h2>
+            <p class="lead" style="max-width: 750px">
+              Creative and detail-oriented junior full-stack web developer with
+              solid skills in HTML5, CSS3, JavaScript, Bootstrap, PHP, Laravel,
+              and MySQL. Experienced in building responsive websites and
+              real-world applications, including a Laravel-based POS system.
+              Quick learner, strong communicator, and collaborative team player
+              with excellent problem-solving abilities. Eager to grow and
+              contribute to impactful web development projects.
+            </p>
+
+            <ul class="list-unstyled mt-4">
+              <li><strong>Phone:</strong> +84 364614373</li>
+              <li>
+                <strong>Email:</strong>
+                <a href="mailto:haoneo.lyh.011@gmail.com"
+                  >haoneo.lyh.011@gmail.com</a
+                >
+              </li>
+              <li><strong>Location:</strong> Ho Chi Minh City</li>
+            </ul>
+
+            <div class="mt-3">
+              <a
+                class="btn btn-outline-primary me-2"
+                href="./image/LonYarHao_CV.pdf"
+                download
+                ><i class="fas fa-download me-2"></i>Download CV</a
+              >
+              <a class="btn btn-primary" href="#contact"
+                ><i class="fas fa-paper-plane me-2"></i>Get in touch</a
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="row g-3">
+              <div class="col-12">
+                <div class="card p-3 h-100">
+                  <h6 class="mb-2">Personal Profile</h6>
+                  <p class="mb-0 small text-muted">
+                    Passionate and detail-oriented full-stack developer with
+                    strong skills in both frontend and backend development.
+                    Skilled in creating clean, responsive, and user-friendly web
+                    applications. Quick learner with excellent problem-solving
+                    abilities, adaptability, and teamwork. Currently studying at
+                    University of the People and completing Code Lab full-stack
+                    training.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="card p-3 h-100">
+                  <h6>Current Learning</h6>
+                  <p class="small text-muted mb-0">
+                    University of the People — UNIV 1001 & CS 1111
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="card p-3 h-100">
+                  <h6>Certifications</h6>
+                  <p class="small text-muted mb-0">
+                    Full-Stack Developer Course — Code Lab
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="py-5">
+      <div class="container-lg">
+        <h3 class="mb-4" data-aos="fade-up">Skills & Expertise</h3>
+
+        <div class="row g-4">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="card p-3">
+              <h6 class="mb-3">Frontend</h6>
+              <div class="skill-row">
+                <div class="skill-label">HTML / CSS</div>
+                <div class="flex-grow-1">
+                  <div class="progress" style="height: 10px">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 92%"
+                      aria-valuenow="92"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                  <small class="text-muted"
+                    >Semantic markup, accessibility, responsive layouts</small
+                  >
+                </div>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-label">JavaScript</div>
+                <div class="flex-grow-1">
+                  <div class="progress" style="height: 10px">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 78%"
+                      aria-valuenow="78"
+                    ></div>
+                  </div>
+                  <small class="text-muted"
+                    >DOM, ES6, fetch, basic patterns</small
+                  >
+                </div>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-label">Bootstrap</div>
+                <div class="flex-grow-1">
+                  <div class="progress" style="height: 10px">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 88%"
+                      aria-valuenow="88"
+                    ></div>
+                  </div>
+                  <small class="text-muted"
+                    >Layouts, components, utility-first approach</small
+                  >
+                </div>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-label">UI / UX</div>
+                <div class="flex-grow-1">
+                  <div class="progress" style="height: 10px">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 72%"
+                      aria-valuenow="72"
+                    ></div>
+                  </div>
+                  <small class="text-muted"
+                    >Spacing, typography, color, usability</small
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="card p-3">
+              <h6 class="mb-3">Backend & Tools</h6>
+
+              <div class="skill-row">
+                <div class="skill-label">Laravel</div>
+                <div class="flex-grow-1">
+                  <div class="progress" style="height: 10px">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 80%"
+                      aria-valuenow="80"
+                    ></div>
+                  </div>
+                  <small class="text-muted"
+                    >Authentication, CRUD, routing, Eloquent</small
+                  >
+                </div>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-label">PHP / MySQL</div>
+                <div class="flex-grow-1">
+                  <div class="progress" style="height: 10px">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 78%"
+                      aria-valuenow="78"
+                    ></div>
+                  </div>
+                  <small class="text-muted"
+                    >Server-side logic, queries, relationships</small
+                  >
+                </div>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-label">Vue.js</div>
+                <div class="flex-grow-1">
+                  <div class="progress" style="height: 10px">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 65%"
+                      aria-valuenow="65"
+                    ></div>
+                  </div>
+                  <small class="text-muted">Components, API integration</small>
+                </div>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-label">Git / DevTools</div>
+                <div class="flex-grow-1">
+                  <div class="progress" style="height: 10px">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 82%"
+                      aria-valuenow="82"
+                    ></div>
+                  </div>
+                  <small class="text-muted">Version control, debugging</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="py-5">
+      <div class="container-lg">
+        <h3 class="mb-4" data-aos="fade-up">Selected Projects</h3>
+
+        <div class="row g-4">
+          <!-- Project 1 -->
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="60">
+            <div class="flip-card card h-100">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./image/pos.png" alt="Laravel POS" />
+                  <div class="flip-card-body">
+                    <h5 class="mt-2">Laravel POS System</h5>
+                    <p class="small text-muted mb-0">
+                      Point of Sale system with authentication, CRUD operations
+                      and reporting.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flip-card-back">
+                  <div class="text-center p-3">
+                    <h5>Laravel POS System</h5>
+                    <p class="small text-muted">
+                      Built using Laravel, MySQL, Blade templates and Bootstrap.
+                      Features user auth, product management, sales reporting
+                      and export.
+                    </p>
+                    <div class="mt-2">
+                      <span class="badge-tech">Laravel</span>
+                      <span class="badge-tech">MySQL</span>
+                      <span class="badge-tech">Bootstrap</span>
+                    </div>
+                    <div class="mt-3">
+                      <a
+                        class="btn btn-sm btn-primary"
+                        href="https://github.com/LonYarHao/laravel-pos-system"
+                        target="_blank"
+                      >
+                        GitHub Repo
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- inner -->
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="120"
+          >
+            <div class="flip-card card h-100">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./image/media.png" alt="Media Project" />
+                  <div class="flip-card-body">
+                    <h5 class="mt-2">Media Project (Laravel + Vue)</h5>
+                    <p class="small text-muted mb-0">
+                      Media platform with API driven frontend and Laravel
+                      backend.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flip-card-back">
+                  <div class="text-center p-3">
+                    <h5>Media Platform</h5>
+                    <p class="small text-muted">
+                      SPA-like frontend with Vue components, REST API endpoints,
+                      and media upload handling on Laravel backend.
+                    </p>
+                    <div class="mt-2">
+                      <span class="badge-tech">Laravel</span>
+                      <span class="badge-tech">Vue.js</span>
+                      <span class="badge-tech">API</span>
+                    </div>
+                    <div class="mt-3">
+                      <a
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/LonYarHao/laravel-media-admin"
+                        target="_blank"
+                      >
+                        Admin (Laravel)
+                      </a>
+
+                      <a
+                        class="btn btn-sm btn-primary ms-2"
+                        href="https://github.com/LonYarHao/vue-media-client"
+                        target="_blank"
+                      >
+                        Client (Vue)
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="180"
+          >
+            <div class="flip-card card h-100">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img
+                    src="./image/onlieLearning.png"
+                    alt="Online Learning Platform"
+                  />
+                  <div class="flip-card-body">
+                    <h5 class="mt-2">Online Learning Platform</h5>
+                    <p class="small text-muted mb-0">
+                      Learning platform UI with courses, lessons, and progress
+                      flow.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flip-card-back">
+                  <div class="text-center p-3">
+                    <h5>Online Learning Platform</h5>
+                    <p class="small text-muted">
+                      Structured learning platform featuring course listings,
+                      lesson pages, and a simple user flow designed for
+                      scalability.
+                    </p>
+                    <div class="mt-2">
+                      <span class="badge-tech">HTML</span>
+                      <span class="badge-tech">CSS</span>
+                      <span class="badge-tech">JavaScript</span>
+                      <span class="badge-tech">UI/UX</span>
+                    </div>
+                    <div class="mt-3">
+                      <a
+                        class="btn btn-sm btn-primary"
+                        href="https://github.com/LonYarHao/Online-Learning-platform"
+                        target="_blank"
+                      >
+                        GitHub Repo
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coming Soon Project -->
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="360"
+          >
+            <div class="flip-card card h-100">
+              <div class="flip-card-inner">
+                <!-- Front -->
+                <div
+                  class="flip-card-front d-flex flex-column align-items-center justify-content-center text-center p-4"
+                >
+                  <i class="fas fa-spinner fa-pulse fa-3x mb-3 text-muted"></i>
+                  <h5 class="mb-2">More Projects Coming Soon...</h5>
+                  <p class="small text-muted mb-0">
+                    Stay tuned for exciting new work!
+                  </p>
+                </div>
+
+                <!-- Back -->
+                <div
+                  class="flip-card-back d-flex flex-column align-items-center justify-content-center text-center p-4"
+                >
+                  <i class="fas fa-lightbulb fa-3x mb-3 text-warning"></i>
+                  <h5>Work in Progress</h5>
+                  <p class="small text-muted">
+                    New projects are being developed. Check back later for live
+                    demos and source code.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+    </section>
+
+    <!-- EDUCATION / TIMELINE -->
+    <section id="education" class="bg-light py-5">
+      <div class="container-lg">
+        <h3 class="mb-4" data-aos="fade-up">Education & Certifications</h3>
+
+        <div class="timeline" data-aos="fade-up" data-aos-delay="80">
+          <div class="timeline-item">
+            <h6 class="mb-1">University of Computer Studies, Yangon</h6>
+            <small class="text-muted"
+              >Computer Science (2017–2020) — paused due to COVID-19</small
+            >
+            <p class="small text-muted mt-2 mb-0">
+              Foundational coursework in programming, algorithms and systems.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <h6 class="mb-1">Fullstack Developer Course — Code Lab</h6>
+            <small class="text-muted">2025</small>
+            <p class="small text-muted mt-2 mb-0">
+              Backend (PHP, Laravel) and frontend (HTML, CSS, JS, Bootstrap,
+              Vue.js) training with hands-on projects.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <h6 class="mb-1">University of the People — Current</h6>
+            <small class="text-muted">Computer Science (Online)</small>
+            <p class="small text-muted mt-2 mb-0">
+              Completed foundational coursework and continuing undergraduate
+              studies.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <h6 class="mb-1">Full-Stack Developer Course — Code Lab</h6>
+            <small class="text-muted">Certificate</small>
+            <p class="small text-muted mt-2 mb-0">
+              Comprehensive training covering both backend (PHP, Laravel, MySQL)
+              and frontend (HTML, CSS, JavaScript, Bootstrap, Vue.js) with
+              hands-on projects.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-5">
+      <div class="container-lg">
+        <h3 class="mb-4" data-aos="fade-up">Contact Me</h3>
+
+        <div class="row g-4">
+          <div class="col-lg-5" data-aos="fade-right">
+            <div class="card p-3">
+              <h6>Get in touch</h6>
+              <p class="small text-muted">
+                Prefer email? Send me a message and I’ll reply as soon as
+                possible.
+              </p>
+
+              <ul class="list-unstyled small">
+                <li class="mb-2">
+                  <i class="fas fa-phone me-2"></i> +84 364614373
+                </li>
+                <li class="mb-2">
+                  <i class="fas fa-envelope me-2"></i
+                  ><a href="mailto:haoneo.lyh.011@gmail.com">
+                    haoneo.lyh.011@gmail.com</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <i class="fas fa-map-marker-alt me-2"></i> Ho Chi Minh City
+                </li>
+                <li class="mb-2">
+                  <i class="fab fa-linkedin me-2"></i
+                  ><a
+                    href="https://www.linkedin.com/in/lon-yar-hao-862549349"
+                    target="_blank"
+                  >
+                    LinkedIn Profile</a
+                  >
+                </li>
+              </ul>
+
+              <div class="mt-3">
+                <a
+                  class="btn btn-outline-primary"
+                  href="mailto:haoneo.lyh.011@gmail.com"
+                  ><i class="fas fa-envelope me-2"></i>Send Email</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-left">
+            <div class="card p-3">
+              <form
+                id="contactForm"
+                onsubmit="
+                  event.preventDefault();
+                  alert('Thank you — message not actually sent (no backend).');
+                "
+              >
+                <div class="row g-2">
+                  <div class="col-md-6">
+                    <label class="form-label small">Your Name</label>
+                    <input
+                      class="form-control"
+                      required
+                      placeholder="Your name"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label small">Your Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      required
+                      placeholder="you@example.com"
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label small">Subject</label>
+                    <input
+                      class="form-control"
+                      placeholder="Subject (optional)"
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label small">Message</label>
+                    <textarea
+                      class="form-control"
+                      rows="6"
+                      placeholder="Write your message..."
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="col-12 text-end">
+                    <button class="btn btn-primary mt-2" type="submit">
+                      <i class="fas fa-paper-plane me-2"></i>Send Message
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-4 bg-dark text-white">
+      <div class="container-lg text-center">
+        <div class="mb-2">
+          <a href="#" class="text-white text-decoration-none me-3">Privacy</a>
+          <a href="#" class="text-white text-decoration-none">Terms</a>
+        </div>
+        <small>&copy; 2025 Lon Yar Hao. All rights reserved.</small>
+      </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button id="toTopBtn" title="Back to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+      // Initialize AOS
+      AOS.init({
+        duration: 700,
+        once: true,
+        offset: 80,
+      });
+
+      // Typed.js for hero
+      document.addEventListener("DOMContentLoaded", function () {
+        var typed = new Typed("#typed", {
+          strings: [
+            "Laravel • PHP • MySQL",
+            "Vue.js • JavaScript • Bootstrap",
+            "Responsive Design • UI/UX",
+          ],
+          typeSpeed: 50,
+          backSpeed: 30,
+          backDelay: 2000,
+          loop: true,
+        });
+      });
+
+      // Back to top button
+      const toTopBtn = document.getElementById("toTopBtn");
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 400) toTopBtn.style.display = "block";
+        else toTopBtn.style.display = "none";
+      });
+      toTopBtn.addEventListener("click", () =>
+        window.scrollTo({ top: 0, behavior: "smooth" }),
+      );
+
+      // Make nav links active on scroll (simple)
+      const sections = document.querySelectorAll("section[id]");
+      const navLinks = document.querySelectorAll(".nav-link");
+      function onScrollActive() {
+        let scrollPos = window.scrollY + 120;
+        sections.forEach((sec) => {
+          if (
+            sec.offsetTop <= scrollPos &&
+            sec.offsetTop + sec.offsetHeight > scrollPos
+          ) {
+            navLinks.forEach((a) => a.classList.remove("active"));
+            const id = sec.getAttribute("id");
+            const link = document.querySelector(
+              '.nav-link[href="#' + id + '"]',
+            );
+            if (link) link.classList.add("active");
+          }
+        });
+      }
+      window.addEventListener("scroll", onScrollActive);
+      onScrollActive();
+
+      // Dark mode toggle with localStorage
+      const themeToggle = document.getElementById("themeToggle");
+      const themeIcon = document.getElementById("themeIcon");
+
+      // Load theme on page load
+      if (localStorage.getItem("theme") === "dark") {
+        document.body.classList.add("dark-mode");
+        themeIcon.classList.replace("fa-moon", "fa-sun");
+      }
+
+      themeToggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        const isDark = document.body.classList.contains("dark-mode");
+
+        // Save preference
+        localStorage.setItem("theme", isDark ? "dark" : "light");
+
+        // Update icon
+        if (isDark) {
+          themeIcon.classList.replace("fa-moon", "fa-sun");
+        } else {
+          themeIcon.classList.replace("fa-sun", "fa-moon");
+        }
+      });
+    </script>
+  </body>
+</html>

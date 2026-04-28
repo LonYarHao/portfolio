@@ -377,41 +377,72 @@ body.dark-mode .text-muted {
      /* deep slate navy */
  }
 
- body.dark-mode #education h3,
- body.dark-mode #education h6,
- body.dark-mode #education small,
- body.dark-mode #education p,
- body.dark-mode #education .text-muted {
-     color: #f8fafc !important;
-     /* force light text */
- }
+/* Apply dark background to the section itself */
+body.dark-mode #experience, 
+body.dark-mode #education {
+    background-color:#0f172a!important; /* Adjust to your preferred dark hex */
+}
+
+/* Force light text for all elements within these sections */
+body.dark-mode #experience h3,
+body.dark-mode #experience h6,
+body.dark-mode #experience small,
+body.dark-mode #experience li,
+body.dark-mode #experience .text-muted,
+body.dark-mode #education h3,
+body.dark-mode #education h6,
+body.dark-mode #education small,
+body.dark-mode #education p,
+body.dark-mode #education .text-muted {
+    color: #f8fafc !important;
+}
 
  body.dark-mode .timeline::before {
      background: linear-gradient(#1e293b, #334155) !important;
  }
 
- body.dark-mode .timeline-item::before {
-     background: #0f172a !important;
-     border-color: var(--accent) !important;
- }
+body.dark-mode .timeline::before {
+    background: linear-gradient(#1e293b, #334155) !important;
+}
 
- /* Force project titles & text visible in dark mode */
- body.dark-mode #projects h5,
- body.dark-mode #projects p,
- body.dark-mode #projects small {
-     color: #f9fafb !important;
-     /* Bright white */
- }
+body.dark-mode .timeline-item::before {
+    background: #0f172a !important;
+    border-color: var(--accent) !important;
+}
 
- body.dark-mode #projects .flip-card-back {
-     background: #1e293b !important;
-     /* Dark slate background */
-     color: #f9fafb !important;
- }
+/* Force project titles & text visible in dark mode */
+body.dark-mode #projects h5,
+body.dark-mode #projects p,
+body.dark-mode #projects small {
+    color: #f9fafb !important;
+    /* Bright white */
+}
 
- body.dark-mode #projects .flip-card-front {
-     background: #1e293b !important;
-     color: #f9fafb !important;
- }
+body.dark-mode #projects .flip-card-back {
+    background: #1e293b !important;
+    /* Dark slate background */
+    color: #f9fafb !important;
+}
 
- 
+body.dark-mode #projects .flip-card-front {
+    background: #1e293b !important;
+    color: #f9fafb !important;
+}
+
+/* Profile card text fixes */
+body.dark-mode .card-body h5,
+body.dark-mode .card-body p,
+body.dark-mode .card-body small {
+color: #f9fafb !important;
+}
+
+/* Professional Experience dark mode fix */
+body.dark-mode #experience h6,
+body.dark-mode #experience .text-muted {
+color: #f9fafb !important;
+}
+
+body.dark-mode #experience .timeline-item h6,
+body.dark-mode #experience .timeline-item .text-muted {
+color: #f9fafb !important;
+}
